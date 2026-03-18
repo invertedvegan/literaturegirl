@@ -45,14 +45,14 @@ a:visited {
 }
 
 /* The sidebar menu */
-.sidenav {
+.navbar {
   /*hardcoded space from top of the div */
   margin: auto;
   width: auto;
   display: flex;
 }
 
-.sidenav a {
+.navbar a {
   /* space between link elements */
   padding: 6px 16px 6px 16px;
   text-decoration: none;
@@ -62,19 +62,19 @@ a:visited {
 }
 
 
-.sidenav a:hover {
+.navbar a:hover {
   color: #064579;
 }
 
 /* Style page content */
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px, change the style of the navbar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {
+  .navbar {
     padding-top: 15px;
   }
 
-  .sidenav a {
+  .navbar a {
     font-size: 18px;
   }
 
