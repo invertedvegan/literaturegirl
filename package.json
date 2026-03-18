@@ -1,0 +1,23 @@
+{
+  "name": "literaturegirl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sergey --root=./src/ --output=../public/",
+    "dev": "sergey --root=./src/ --output=../public/ --watch",
+    "deploy": "npm run build && async-neocities --src public --cleanup",
+    "start": "npm run deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "sergey": "^0.0.13"
+  },
+  "devDependencies": {
+    "async-neocities": "^4.1.2"
+  }
+}

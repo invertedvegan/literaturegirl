@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+public/
+
+# environment variables
+.env
+
+# logs
+npm-debug.log*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# editor stuff
+.vscode/
+.idea/

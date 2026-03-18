@@ -1,0 +1,90 @@
+/*stop looking at my css, you pervert! */
+
+.header {
+  padding-top: 3em;
+  padding-left: 0.5em;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px
+}
+
+main {
+  padding: 0px 10px;
+  /* sizing for the post itself */
+  max-width: 100%;
+  min-width: 10%;
+  font-size: 14px;
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+  color: rgb(245, 245, 245);
+  max-width: 60em;
+  font-family: "Lato", sans-serif;
+  margin: auto;
+}
+
+a {
+  color: #2196F3;
+}
+
+a:hover {
+  color: #064579;
+}
+
+a:visited {
+  color: #096fc3;
+}
+
+/* The sidebar menu */
+.sidenav {
+  /*hardcoded space from top of the div */
+  margin: auto;
+  width: auto;
+  display: flex;
+}
+
+.sidenav a {
+  /* space between link elements */
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #2196F3;
+  display: block;
+}
+
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+  /* Style page content */
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+  }
+
+  @media screen and (max-width:600px) {
+    img{
+      max-width:100%; 
+        max-height:100%;
+    }
+  }
+
+  @media screen and (min-width:600px) {
+    img{
+      max-width: 50%;
+      max-height: 50%;
+    }
+  }
