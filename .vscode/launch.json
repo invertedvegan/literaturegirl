@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "npm: dev",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "Sergey running on http://localhost:([0-9]+)",
+                "uriFormat": "http://localhost:%s"
+            }
+        }
+    ]
+}
